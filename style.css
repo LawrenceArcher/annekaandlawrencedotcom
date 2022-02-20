@@ -1,30 +1,63 @@
-#headline_image {
-    max-width: 100%;
+body {
+    margin:0px;
+    font-family:Arial, Helvetica, sans-serif
 }
-/* Add a black background color to the top navigation */
 .topnav {
-    background-color: #FFF;
+    background-color: #4E6A62;
+    color: #F5F5F5;
     overflow: hidden;
-  }
-  
-  /* Style the links inside the navigation bar */
-  .topnav a {
+    display:absolute;
+    top:0px;
+    margin-top:0px;
+    padding-top:0px;
+    height:5vh;
+}
+/* Style the links inside the navigation bar */
+.topnav a {
     float: left;
-    color: #000;
+    color: #F5F5F5;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
-  }
-  
-  /* Change the color of links on hover */
-  .topnav a:hover {
-    background-color: #000;
-    color: #FFF;
-  }
+}
+/* Change the color of links on hover */
+.topnav a:hover {
+    background-color: #3D524C;
+    color: #F5F5F5;
+}
+.topnav .topbar_right {
+    color: #F5F5F5;
+    margin-left: auto;
+    margin-right:0;
+    float:right;
+}
+#top_section {
+    height: 80vh;
+    padding-top:20vh;
+    margin:auto;
+    background-color: #CED9F3;
+    color:#0D1321;
+}
+.headline_image {
+    max-width: 48%;
+    display:inline-block;
+}
+.image-standard {
+    max-width:100%;
+}
 
-  .topnav .topbar_right {
-      margin-left: auto;
-      margin-right:0;
-      float:right;
-  }
+#story {
+    width: 40%;
+    display:inline-block;
+    padding-left:5%;
+    padding-right:5%;
+    margin-top:0px;
+    margin-bottom:auto;
+    top:0px;
+    vertical-align: top;
+}
+.section {
+    margin-top:0px;
+    margin-bottom:auto;
+}
