@@ -1,63 +1,108 @@
+/* CSS HEX */
+:root {
+    --laurel-green: #93aa88ff;
+    --desert-sand: #efc9a9ff;
+    --copper-crayola: #dc876aff;
+    --charcoal: #2f4858ff;
+    --raisin-black: #2d2d34ff;
+}
 body {
     margin:0px;
-    font-family:Arial, Helvetica, sans-serif
+    font-family:Arial, Helvetica, sans-serif;
+    background-color: var(--laurel-green);
 }
 .topnav {
-    background-color: #4E6A62;
-    color: #F5F5F5;
+    background-color: var(--laurel-green);
     overflow: hidden;
     display:absolute;
     top:0px;
     margin-top:0px;
     padding-top:0px;
     height:5vh;
+    border-radius: 0 0 10px 10px;
 }
 /* Style the links inside the navigation bar */
 .topnav a {
     float: left;
-    color: #F5F5F5;
+    color: var(--raisin-black);
     text-align: center;
-    padding: 14px 16px;
+    padding: 14px;
+    padding-right: 14px;
+    height: 100%;
     text-decoration: none;
     font-size: 17px;
 }
 /* Change the color of links on hover */
 .topnav a:hover {
-    background-color: #3D524C;
-    color: #F5F5F5;
+    background-color: var(--desert-sand);
+    color: var(--charcoal);
 }
 .topnav .topbar_right {
-    color: #F5F5F5;
     margin-left: auto;
     margin-right:0;
     float:right;
 }
 #top_section {
-    height: 80vh;
-    padding-top:20vh;
+    height: 100vh;
     margin:auto;
-    background-color: #CED9F3;
-    color:#0D1321;
+    background-color: var(--laurel-green);
+    color:var(--raisin-black);
 }
-.headline_image {
-    max-width: 48%;
-    display:inline-block;
-}
-.image-standard {
-    max-width:100%;
-}
-
 #story {
-    width: 40%;
+    max-width: 50vw;
+    min-width: 35vw;
     display:inline-block;
-    padding-left:5%;
-    padding-right:5%;
-    margin-top:0px;
+    padding-left:10%;
+    margin-top:30vh;
     margin-bottom:auto;
     top:0px;
     vertical-align: top;
 }
+#rsvp-button {
+    margin-top:100px;
+    text-decoration: none;
+    color: var(--raisin-black);
+    text-align: center;
+    border: 1px solid #2d2d34ff;
+    padding: 14px;
+    border-radius: 10px;
+}
+#rsvp-button:hover{
+    color: var(--laurel-green);
+    background-color: var(--raisin-black);
+}
+.headline_image {
+    max-width: 50vw;
+    display:inline-block;
+    margin-top:8vh;
+}
+.image-standard {
+    max-width:100%;
+    border-radius: 20px;
+}
+
+
 .section {
     margin-top:0px;
     margin-bottom:auto;
+}
+
+@media screen and (max-width: 800px) {
+    #top_section {
+        width:100vw;
+        display:flex;
+        flex-direction: column;
+        
+    }
+    #story {
+        order: 1;
+        max-width: 100vw;
+        margin-top: 10vh;
+        margin-bottom: 10vh;
+    }
+    #top_section .headline_image {
+        order: 2;
+        max-width: 100vw;
+        margin: 10vh, 5vw;
+    }
 }
