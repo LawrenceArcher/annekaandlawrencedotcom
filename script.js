@@ -22,5 +22,5 @@ var seconds = delta % 60;  // in theory the modulus is not required
 console.log(date_now)
 console.log(weddingDate)
 
-document.getElementById("time_until").innerHTML = days + " days " + hours + " hours " + minutes + " minutes"
+document.getElementById("time_until").innerHTML = days + " days"
 
