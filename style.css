@@ -5,43 +5,139 @@
     --copper-crayola: #D05F39;
     --charcoal: #2f4858ff;
     --raisin-black: #2d2d34ff;
+    --white: #f9f9f9;
+    --black: #36383F;
+    --gray: #85888C;
+}
+/* Start insert from responsive menu tutorial */
+
+/* Reset */
+a{
+    text-decoration: none;
 }
 body {
     margin:0px;
     font-family:Arial, Helvetica, sans-serif;
     background-color: var(--desert-sand);
 }
-.topnav {
-    background-color: var(--desert-sand);
-    overflow: hidden;
-    display:absolute;
-    top:0px;
-    margin-top:0px;
-    padding-top:0px;
-    height:5vh;
-    border-radius: 0 0 10px 10px;
+ul {
+    list-style: none;
 }
-/* Style the links inside the navigation bar */
-.topnav a {
-    float: left;
+/* Header */
+.header{
+    background-color: var(--desert-sand);
+    position: sticky;
+    top: 0;
+    width: 100%;
+}
+
+.logo{
+    display: inline-block;
     color: var(--raisin-black);
-    text-align: center;
-    padding: 14px;
-    padding-right: 14px;
+    font-size: 60px;
+    margin-left: 10px;
+}
+/* Nav styling */
+.nav{
+    width: 100%;
     height: 100%;
-    text-decoration: none;
-    font-size: 17px;
+    position: fixed;
+    background-color: var(--laurel-green);
+    overflow: hidden;
+
 }
-/* Change the color of links on hover */
-.topnav a:hover {
+.menu a{
+    display: block;
+    padding: 30px;
+    color: var(--white);
+}
+.menu a:hover{
     background-color: var(--desert-sand);
-    color: var(--charcoal);
 }
-.topnav .topbar_right {
-    margin-left: auto;
-    margin-right:0;
-    float:right;
+.nav{
+    max-height: 0;
+    transition: max-height .5s ease-out;
 }
+/* Menu Icon */
+.hamb{
+    cursor: pointer;
+    float: right;
+    padding: 40px 20px;
+}/* Style label tag */
+.hamb-line {
+    background: var(--raisin-black);
+    display: block;
+    height: 2px;
+    position: relative;
+    width: 24px;
+
+} /* Style span tag */
+
+.hamb-line::before,
+.hamb-line::after{
+    background: var(--raisin-black);
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    width: 100%;
+}
+.hamb-line::before{
+    top: 5px;
+}
+.hamb-line::after{
+    top: -5px;
+}
+
+.side-menu {
+    display: none;
+} /* Hide checkbox */
+/* Toggle menu icon */
+.side-menu:checked ~ nav{
+    max-height: 100%;
+    background-color: var(--laurel-green);
+}
+.side-menu:checked ~ .hamb .hamb-line {
+    background: transparent;
+}
+.side-menu:checked ~ .hamb .hamb-line::before {
+    transform: rotate(-45deg);
+    top:0;
+}
+.side-menu:checked ~ .hamb .hamb-line::after {
+    transform: rotate(45deg);
+    top:0;
+}
+/* Responsiveness */
+@media (min-width: 768px) {
+    .nav{
+        max-height: 100%;
+        height: 69px;
+        top: 0;
+        position: relative;
+        float: right;
+        width: fit-content;
+        background-color: var(--desert-sand);
+    }
+    .menu {
+        margin-top:0;
+    }
+    .menu li{
+        float: left;
+    }
+    .menu a {
+        color: var(--raisin-black)
+    }
+    .menu a:hover{
+        background-color: transparent;
+        color: var(--gray);
+    }
+    .hamb{
+        display: none;
+    }
+}
+/* End insert from responsive menu tutorial */
 #top_section {
     height: 100vh;
     margin:auto;

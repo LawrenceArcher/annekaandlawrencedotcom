@@ -1,0 +1,31 @@
+.topnav {
+    background-color: var(--desert-sand);
+    overflow: hidden;
+    display:absolute;
+    top:0px;
+    margin-top:0px;
+    padding-top:0px;
+    height:5vh;
+    border-radius: 0 0 10px 10px;
+}
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: left;
+    color: var(--raisin-black);
+    text-align: center;
+    padding: 14px;
+    padding-right: 14px;
+    height: 100%;
+    text-decoration: none;
+    font-size: 17px;
+}
+/* Change the color of links on hover */
+.topnav a:hover {
+    background-color: var(--desert-sand);
+    color: var(--charcoal);
+}
+.topnav .topbar_right {
+    margin-left: auto;
+    margin-right:0;
+    float:right;
+}
