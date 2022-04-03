@@ -10,8 +10,10 @@
     --gray: #85888C;
 }
 @font-face {
-    font-family: southland;
-    src: "/fonts/southland.ttf" format("truetype")
+    font-family: 'southland';
+    src: "/fonts/southland.ttf" format("truetype");
+    font-display: swap;
+    font-style:normal;
 }
 @font-face {
     font-family: libertine;
@@ -44,7 +46,7 @@ ul {
     color: var(--raisin-black);
     font-size: 40px;
     margin-left: 10px;
-    font-family: 'southland';
+    font-family: 'southland' !important;
 }
 /* Nav styling */
 .nav{
@@ -200,6 +202,7 @@ ul {
     margin-top: 10vh;
     margin-bottom: 10vh;
     text-align: center;
+    font-family: libertine;
 }
 
 @media screen and (min-width: 888px) {
