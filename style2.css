@@ -1,0 +1,59 @@
+/* Place for page-specific styling to keep things slightly simpler */
+/* CSS HEX */
+:root {
+    --laurel-green: #69835D;
+    --desert-sand: #F6DECB;
+    --copper-crayola: #D05F39;
+    --charcoal: #2f4858ff;
+    --raisin-black: #2d2d34ff;
+    --white: #f9f9f9;
+    --black: #36383F;
+    --gray: #85888C;
+}
+/* Styling for things page */
+
+#things {
+    text-align:center;
+}
+#things-selector {
+    text-align: center;
+    color: var(--raisin-black);
+}
+#things-selector a {
+    color: var(--copper-crayola);
+}
+.content-section {
+    padding:0 10%;
+    display: flex;
+    flex-direction: column;
+}
+.thing-card {
+    padding: 0 5%;
+    margin: 5% 0;
+}
+#eat {
+    display:none;
+}
+#relax {
+    display:none;
+}
+
+/* Styling for travel page */
+#map-view {
+    max-width:100vw;
+    width:100vw;
+    padding: 0 5%;
+}
+#travel {
+    text-align: center;
+}
+#map-iframe {
+    max-width:100vw;
+    width:90vw;
+}
+
+/* Styling for venue page */
+
+#venue h3 {
+    text-align: center;
+}
