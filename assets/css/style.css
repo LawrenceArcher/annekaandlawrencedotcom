@@ -223,3 +223,52 @@ ul {
         border-radius:10%;
     }
 }
+
+
+/* Styling for things page */
+
+#things {
+    text-align:center;
+}
+#things-selector {
+    text-align: center;
+    color: var(--raisin-black);
+}
+#things-selector a {
+    color: var(--copper-crayola);
+}
+.content-section {
+    padding:0 10%;
+    display: flex;
+    flex-direction: column;
+}
+.thing-card {
+    padding: 0 5%;
+    margin: 5% 0;
+}
+#eat {
+    display:none;
+}
+#relax {
+    display:none;
+}
+
+/* Styling for travel page */
+#map-view {
+    max-width:100vw;
+    width:100vw;
+    padding: 0 5%;
+}
+#travel {
+    text-align: center;
+}
+#map-iframe {
+    max-width:100vw;
+    width:90vw;
+}
+
+/* Styling for venue page */
+
+#venue h3 {
+    text-align: center;
+}
