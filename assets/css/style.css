@@ -32,7 +32,7 @@ a {
 }
 
 body {
-    margin: 0px;
+    margin: 0;
     font-family: libertine, Arial, Helvetica, sans-serif;
     background-color: var(--desert-sand);
 }
@@ -247,7 +247,7 @@ ul {
     margin-top: 10vh;
     margin-bottom: 10vh;
     text-align: center;
-    font-family: libertine;
+    font-family: libertine, serif;
 }
 
 @media screen and (min-width: 888px) {
