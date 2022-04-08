@@ -9,19 +9,23 @@
     --black: #36383F;
     --gray: #85888C;
 }
+
+/* Could extract these to a separate file, at the moment you only have two font styles, no bold or anything else */
 @font-face {
     font-family: 'southland';
-    src: "/fonts/southland.ttf" format("truetype");
+    src: url("/assets/fonts/southland.ttf");
+    src: local(''),
+    url('/assets/fonts/southland.ttf') format('truetype');
     font-display: swap;
-    font-style:normal;
+    font-style: normal;
 }
 @font-face {
     font-family: libertine;
-    src: "/fonts/linux_libertine/LinLibertine_aBL.ttf" format("truetype")
+    src: url("/assets/fonts/linux_libertine/LinLibertine_aBL.ttf");
+    src: local(''),
+    url('/assets/fonts/linux_libertine/LinLibertine_aBL.ttf') format("truetype")
 }
-/* Start insert from responsive menu tutorial */
 
-/* Reset */
 a{
     text-decoration: none;
 }
