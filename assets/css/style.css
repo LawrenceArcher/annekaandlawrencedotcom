@@ -22,9 +22,10 @@
 
 @font-face {
     font-family: libertine;
-    src: url("/assets/fonts/linux_libertine/LinLibertine_aBL.ttf");
+    src: url("/assets/fonts/linux_libertine/LinLibertine_R.ttf");
     src: local(''),
-    url('/assets/fonts/linux_libertine/LinLibertine_aBL.ttf') format("truetype")
+    url('/assets/fonts/linux_libertine/LinLibertine_R.ttf') format("truetype");
+    font-style: normal;
 }
 
 a {
@@ -247,7 +248,6 @@ ul {
     margin-top: 10vh;
     margin-bottom: 10vh;
     text-align: center;
-    font-family: libertine, serif;
 }
 
 @media screen and (min-width: 888px) {
