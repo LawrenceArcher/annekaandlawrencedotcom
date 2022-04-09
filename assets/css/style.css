@@ -14,8 +14,7 @@
 @font-face {
     font-family: 'southland';
     src: url("/assets/fonts/southland.ttf");
-    src: local(''),
-    url('/assets/fonts/southland.ttf') format('truetype');
+    src: local(''), url('/assets/fonts/southland.ttf') format('truetype');
     font-display: swap;
     font-style: normal;
 }
@@ -58,7 +57,7 @@ ul {
     font-family: 'southland', cursive;
 }
 
-@media (min-width: 992px) {
+@media (min-width: 1150px) {
     .logo {
         font-size: 80px;
         margin-bottom: -40px;
@@ -155,7 +154,7 @@ ul {
 }
 
 /* Responsiveness */
-@media (min-width: 888px) {
+@media (min-width: 948px) {
     .nav {
         max-height: 100%;
         height: 69px;
@@ -317,6 +316,14 @@ ul {
 #map-iframe {
     max-width: 100vw;
     width: 90vw;
+}
+@media screen and (min-width: 1150px) {
+    #travel {
+        flex-direction: row;
+    }
+    #travel div {
+        padding: 0 5%;
+    }
 }
 
 /* Styling for venue page */
