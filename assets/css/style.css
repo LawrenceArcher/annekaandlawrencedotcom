@@ -312,7 +312,9 @@ ul {
 #travel {
     text-align: center;
 }
-
+#travel div  {
+    height: fit-content;
+}
 #map-iframe {
     max-width: 100vw;
     width: 90vw;
