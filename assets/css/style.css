@@ -248,6 +248,9 @@ ul {
     margin-bottom: 10vh;
     text-align: center;
 }
+.title {
+    text-align: center;
+}
 
 @media screen and (min-width: 888px) {
     #top_section {
