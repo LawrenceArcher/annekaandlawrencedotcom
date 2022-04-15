@@ -339,6 +339,20 @@ ul {
 
 /* Styling for venue page */
 
-#venue h3 {
+#venue {
     text-align: center;
+}
+#venue-info {
+    display:flex;
+    flex-direction: column;
+}
+
+
+@media screen and (min-width: 1150px) {
+    #venue_info {
+        flex-direction:row;
+    }
+    #venue-image {
+        min-width: 25vw;
+    }
 }
