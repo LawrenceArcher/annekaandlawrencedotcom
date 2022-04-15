@@ -304,6 +304,9 @@ ul {
 #relax {
     display: none;
 }
+.active {
+    text-decoration: underline;
+}
 
 /* Styling for travel page */
 #map-view {

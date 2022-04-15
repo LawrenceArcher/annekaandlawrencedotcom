@@ -25,14 +25,26 @@ function toggleWalk() {
     document.getElementById("walk").style.display = "inline-block"
     document.getElementById("eat").style.display = "none"
     document.getElementById("relax").style.display = "none"
+
+    document.getElementById("walk-toggle").classList.add("active")
+    document.getElementById("eat-toggle").classList.remove("active")
+    document.getElementById("relax-toggle").classList.remove("active")
 }
 function toggleEat() {
     document.getElementById("walk").style.display = "none"
     document.getElementById("eat").style.display = "inline-block"
     document.getElementById("relax").style.display = "none"
+
+    document.getElementById("walk-toggle").classList.remove("active")
+    document.getElementById("eat-toggle").classList.add("active")
+    document.getElementById("relax-toggle").classList.remove("active")
 }
 function toggleRelax() {
     document.getElementById("walk").style.display = "none"
     document.getElementById("eat").style.display = "none"
     document.getElementById("relax").style.display = "inline-block"
+
+    document.getElementById("walk-toggle").classList.remove("active")
+    document.getElementById("eat-toggle").classList.remove("active")
+    document.getElementById("relax-toggle").classList.add("active")
 }
