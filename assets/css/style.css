@@ -323,6 +323,7 @@ ul {
 }
 #travel div  {
     height: fit-content;
+    padding: 5vw 0;
 }
 #map-iframe {
     max-width: 100vw;
@@ -333,7 +334,7 @@ ul {
         flex-direction: row;
     }
     #travel div {
-        padding: 0 5%;
+        padding: 5vh 5vw;
     }
 }
 
