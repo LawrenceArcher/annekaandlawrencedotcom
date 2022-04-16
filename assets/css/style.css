@@ -259,10 +259,12 @@ ul {
 
     #rsvp_section {
         margin-top: 15%;
+        padding-right:0;
     }
 
     #headline_image {
         margin-right: 5vw;
+        max-width:40vw;
     }
 
     #headline_image .image_standard {
