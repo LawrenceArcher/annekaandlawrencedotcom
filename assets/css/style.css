@@ -346,13 +346,31 @@ ul {
     display:flex;
     flex-direction: column;
 }
-
+#venue-image {
+    order:2;
+}
+#accomodation {
+    order:1;
+}
 
 @media screen and (min-width: 1150px) {
-    #venue_info {
+    #venue-info {
         flex-direction:row;
     }
     #venue-image {
-        min-width: 25vw;
+        min-width: 30vw;
+        max-width: 40vw;
+    }
+    #accomodation {
+        padding-left:5%;
+    }
+    #venue-image {
+        order:1;
+    }
+    #venue-image .image_standard {
+        border-radius: 5%;
+    }
+    #accomodation {
+        order:2;
     }
 }
