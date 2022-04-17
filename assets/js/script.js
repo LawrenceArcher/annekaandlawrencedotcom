@@ -22,7 +22,7 @@ document.getElementById("time_until").innerHTML = days + " days"
 // SELECTOR FOR THINGS
 
 function toggleWalk() {
-    document.getElementById("walk").style.display = "inline-block"
+    document.getElementById("walk").style.display = "flex"
     document.getElementById("eat").style.display = "none"
     document.getElementById("relax").style.display = "none"
 
@@ -32,7 +32,7 @@ function toggleWalk() {
 }
 function toggleEat() {
     document.getElementById("walk").style.display = "none"
-    document.getElementById("eat").style.display = "inline-block"
+    document.getElementById("eat").style.display = "flex"
     document.getElementById("relax").style.display = "none"
 
     document.getElementById("walk-toggle").classList.remove("active")
@@ -42,7 +42,7 @@ function toggleEat() {
 function toggleRelax() {
     document.getElementById("walk").style.display = "none"
     document.getElementById("eat").style.display = "none"
-    document.getElementById("relax").style.display = "inline-block"
+    document.getElementById("relax").style.display = "flex"
 
     document.getElementById("walk-toggle").classList.remove("active")
     document.getElementById("eat-toggle").classList.remove("active")
@@ -63,7 +63,7 @@ function showSlides() {
   slideIndex++;
   if (slideIndex > slides.length) {slideIndex = 1}
   slides[slideIndex-1].style.display = "block";
-  setTimeout(showSlides, 5000); // Change image every 2 seconds
+  setTimeout(showSlides, 5000); // Change image every 5 seconds
 }
 
 // Next/previous controls

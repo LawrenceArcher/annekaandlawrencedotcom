@@ -72,7 +72,7 @@ ul {
     position: fixed;
     background-color: var(--laurel-green);
     overflow: hidden;
-
+    z-index: 9000;
 }
 
 .menu a {
@@ -108,7 +108,6 @@ ul {
 }
 
 /* Style span tag */
-
 .hamb-line::before,
 .hamb-line::after {
     background: var(--raisin-black);
@@ -222,6 +221,8 @@ ul {
     order: 2;
     margin-top: 5vh;
     border-radius: 0;
+    position: relative;
+    z-index: 0;
 }
 
 #rsvp-button {
@@ -275,7 +276,6 @@ ul {
     }
 }
 
-
 /* Styling for things page */
 
 #things {
@@ -311,6 +311,28 @@ ul {
 }
 .active {
     text-decoration: underline;
+}
+
+@media screen and (min-width: 1150px) {
+    .thing-card {
+        padding: 0;
+        margin: 0;
+    }
+    #things .content-section .thing-card{
+        flex-direction:row;
+    }
+    #things .content-section .thing-card .thing-image {
+        max-width: 40%;
+        display:inline-block;
+        padding:5%;
+    }
+    #things .content-section .thing-card .thing-text {
+        max-width: 40%;
+        display:inline-block;
+        margin-top:10%;
+        vertical-align:top;
+    }
+    
 }
 
 /* Styling for travel page */
@@ -378,12 +400,6 @@ ul {
 }
 
 /* styling for slideshow display */
-
-/* Slideshow container */
-.slideshow-container {
-  position: relative;
-  margin: auto;
-}
 
 /* Hide the images by default */
 .mySlides {
