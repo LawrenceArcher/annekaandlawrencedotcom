@@ -88,6 +88,7 @@ ul {
 .nav {
     max-height: 0;
     transition: max-height .5s ease-out;
+    z-index:9000;
 }
 
 /* Menu Icon */
@@ -136,6 +137,7 @@ ul {
 .side-menu:checked ~ nav {
     max-height: 100%;
     background-color: var(--laurel-green);
+    z-index: 9000;
 }
 
 .side-menu:checked ~ .hamb .hamb-line {
@@ -311,6 +313,7 @@ ul {
 }
 .active {
     text-decoration: underline;
+    z-index:1;
 }
 
 @media screen and (min-width: 1150px) {
@@ -404,6 +407,10 @@ ul {
 /* Hide the images by default */
 .mySlides {
   display: none;
+  z-index:1;
+}
+.mySlides img {
+    z-index:1;
 }
 
 /* Next & previous buttons */
