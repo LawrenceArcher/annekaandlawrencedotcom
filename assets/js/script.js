@@ -87,3 +87,13 @@ function showNextSlides(n) {
   slides[slideIndex-1].style.zIndex = "1"
   dots[slideIndex-1].className += " active";
 }
+
+// Logic to ensure slideshow doesn't show above the nav menu
+
+function checkMenu() {
+    if(document.getElementById("side-menu").checked == true) {
+        document.getElementById("headline_image").style.display = "inline-block";
+    } else {
+        document.getElementById("headline_image").style.display = "none";
+    }
+}

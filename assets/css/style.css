@@ -140,6 +140,10 @@ ul {
     z-index: 9000;
 }
 
+.side-menu:checked ~ #headline_image {
+    z-index:1;
+}
+
 .side-menu:checked ~ .hamb .hamb-line {
     background: transparent;
 }
