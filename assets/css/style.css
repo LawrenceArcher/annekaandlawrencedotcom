@@ -498,10 +498,10 @@ ul {
     content: '';
     position: absolute;
     width: 6px;
-    background-color: white;
+    background-color: var(--copper-crayola);
     top: 0;
     bottom: 0;
-    left: 50%;
+    left: 50.75%;
     margin-left: -3px;
 }
 
@@ -510,7 +510,7 @@ ul {
     padding: 10px 40px;
     position: relative;
     background-color: inherit;
-    width: 50%;
+    width: 45%;
 }
   
 /* The circles on the timeline */
@@ -519,9 +519,9 @@ ul {
     position: absolute;
     width: 25px;
     height: 25px;
-    right: -17px;
-    background-color: white;
-    border: 4px solid #FF9F55;
+    right: -6px;
+    background-color: var(--copper-crayola);
+    border: 4px solid var(--charcoal);
     top: 15px;
     border-radius: 50%;
     z-index: 1;
@@ -546,9 +546,9 @@ ul {
     width: 0;
     z-index: 1;
     right: 30px;
-    border: medium solid white;
+    border: medium solid var(--copper-crayola);
     border-width: 10px 0 10px 10px;
-    border-color: transparent transparent transparent white;
+    border-color: transparent transparent transparent var(--copper-crayola);
 }
   
 /* Add arrows to the right container (pointing left) */
@@ -560,22 +560,24 @@ ul {
     width: 0;
     z-index: 1;
     left: 30px;
-    border: medium solid white;
+    border: medium solid var(--copper-crayola);
     border-width: 10px 10px 10px 0;
-    border-color: transparent white transparent transparent;
+    border-color: transparent var(--copper-crayola) transparent transparent;
 }
   
 /* Fix the circle for containers on the right side */
 .right::after {
-    left: -16px;
+    left: -7px;
 }
 
 /* The actual content */
 .content {
-    padding: 20px 30px;
-    background-color: white;
+    padding: 10px 30px;
+    background-color: inherit;
     position: relative;
     border-radius: 6px;
+    border: solid 3px var(--copper-crayola);
+    color: var(--black);
   }
   
   /* Media queries - Responsive timeline on screens less than 600px wide */
